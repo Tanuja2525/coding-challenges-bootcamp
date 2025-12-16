@@ -3,7 +3,16 @@ def transpose_matrix(matrix):
 
 
 def main():
-    matrix = [[1,2,3],[4,5,6]]
+    r = int(input("Enter number of rows: "))
+    c = int(input("Enter number of columns: "))
+
+    matrix = []
+
+    print("Enter matrix elements row-wise:")
+    for i in range(r):
+        row = list(map(int, input().split()))
+        matrix.append(row)
+
     print("Matrix:", matrix)
     print("Transpose:", transpose_matrix(matrix))
 

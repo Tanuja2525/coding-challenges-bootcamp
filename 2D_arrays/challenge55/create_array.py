@@ -10,9 +10,12 @@ def main():
     for _ in range(r):
         row = list(map(int, input().split()))
         matrix.append(row)
-
+    print("matrix →")
+    print("[")
     for row in display_2d_array(matrix):
-        print(row)
+        print(" ", row)
+    print("]")
+
 
 
 if __name__ == "__main__":
