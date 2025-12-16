@@ -27,7 +27,7 @@ def main():
         row = list(map(int, input().split()))
         b.append(row)
 
-    # Matrix multiplication condition
+
     if c1 != r2:
         print("Matrix multiplication not possible")
         return
